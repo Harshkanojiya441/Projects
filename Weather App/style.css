@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+    padding: 35px;
+    gap: 20px;
+}
+
+/* Search CSS */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.search .search_btn {
+    border: none;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search .search_btn img {
+    height: 20px;
+}
+
+/* error */
+.error {
+    color: #fff;
+    display: none;
+}
+
+/* weather css */
+.weather {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.weather img {
+    height: 150px;
+}
+
+.weather h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+/* Humidity Wind-Speed */
+.details {
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+    display: none;
+}
+
+.details .humidity,
+.details .wind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details .humidity img,
+.details .wind img {
+    height: 25px;
+}
+
+.details .humidity div p:nth-child(2),
+.details .wind div p:nth-child(2) {
+    color: #fff;
+    font-size: 10px;
+}
+
+.wind-speed,
+.humidity-reading {
+    font-size: 17px;
+    color: #fff;
+}
